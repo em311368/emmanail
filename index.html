@@ -5,16 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <a href="#csss2">
+        <button class="scroll-btn">Imformation</button>
+    </a>
+    
 
-
+    
 
 </head>
 <style>
+    .redirect-btn {
+            padding: 16px 16px;
+            font-size: 39px;
+            background-color: rgb(234, 197, 216); 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none; /* <a>タグの下線を消す */
+            display: inline-block;
+            
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; /* 横方向の中央揃え */
+            align-items: center; /* 縦方向の中央揃え */
+            
+}
+
+        /* ボタンをホバーしたときのスタイル */
+        .redirect-btn:hover {
+            background-color: rgb(232, 195, 214); /* 少し暗い緑色 */
+        }
+    .rr {
+        scroll-behavior: smooth;
+    }
+    
+        .scroll-btn {
+        position: absolute;
+        top: 10px; /* Adjust the distance from the top */
+        left: 150px; /* Move the button to the left */
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #f36c6c;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        z-index: 10; /* Make sure it stays above other elements */
+        }
+
+    
     .container {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 80px 470px 30px 400px 400px 400px 1054px 200px;
+        grid-template-rows: 80px 470px 30px 400px 400px 400px 80px 1053px 200px;
         grid-template-areas:
             "html html html html"
             "sk sk sk sk"
@@ -22,6 +68,7 @@
             "js1 js2 js3 js4"
             "em1 em2 em3 em4"
             "mm1 mm2 mm3 mm4"
+            "rrr rrr rrr rrr"
             "rr rr rr rr"
             "css2 css2 css2 css2"
         ;
@@ -48,6 +95,8 @@
         color: darkred;
         background-image: url(https://i.pinimg.com/1200x/bb/93/64/bb936496b61cd71cea58344204b9e743.jpg);
     }
+    
+
     .sk {
         grid-area: sk;
         background-color:rgb(243, 199, 227);
@@ -171,8 +220,13 @@
         background-image: url("0966B0D8-894F-4E27-897A-6F02429F272D_1_201_a.jpeg");
         height: 400px;
         width: 400px;
-        row-gap: 8px;
+        row-gap: 12px;
     }
+    .rrr {
+        grid-area: rrr;
+        background-color:white;
+        
+    }  
     
     .rr {
         grid-area: rr;
@@ -182,6 +236,7 @@
         background-image: url("1866717A-1289-4A8D-AFBB-D5D5286D86F5_1_201_a.jpeg");
         background-color:rgb(223, 175, 200)
     }   
+ 
     
     
 
@@ -194,15 +249,20 @@
         
         
     }
+    
 </style>
 
 <body>
+
+       
     
 
-
-
     <div class="container">
+        
         <div class="html">em nail</div>
+        
+
+
         <div class="sk">Good nails<br>Good mood<br>Good day</div>
         <div class="css"> ᰔ　　OUR COLLECTION　　ᰔ　　OUR COLLECTION　　ᰔ　　OUR COLLECTION　　ᰔ　　OUR COLLECTION　　ᰔ　　OUR
             COLLECTION　　ᰔ</div>
@@ -220,17 +280,27 @@
         <div class="mm2"></div>
         <div class="mm3"></div>
         <div class="mm4"></div>
+
+        <div class="rrr"><a href="https://pin.it/3N2lnWGZB" class="redirect-btn" target="_blank">
+            See more
+        </a>
+    </div> 
+        
+        <div class="rr"></div>
+
         
         
-
-
-
         <div class="css2" id="csss2">📍　Tokyo Edogawa Ward, Edogawa 6-33-113A
             <a href="https://www.google.com/maps?q=日本、〒150-0011 東京都渋谷区東１丁目１−１１" target="_blank">View on Google Maps</a>
             <br><br> 🕓　Monday~Saturday 11:00~20：00
             <br><br>📞　090-1264-1739<br><br>To place a reservation, please send me a DM on my instagram.
-            <a href="https://www.instagram.com/emmmaa.19/" target="_blank">@emmmaa.19</a></div>
+            <a href="https://www.instagram.com/emmmaa.19/" target="_blank">@emmmaa.19</a>
         </div>
+
+
+    </div>
+       
+    
 </body>
 
 </html>
