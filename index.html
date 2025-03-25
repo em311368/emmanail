@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+<style>
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px 470px 30px 400px 400px 400px 1054px 200px;
+        grid-template-areas:
+            "html html html html"
+            "sk sk sk sk"
+            "css css css css"
+            "js1 js2 js3 js4"
+            "em1 em2 em3 em4"
+            "mm1 mm2 mm3 mm4"
+            "rr rr rr rr"
+            "css2 css2 css2 css2"
+        ;
+
+
+        column-gap: 0px;
+        row-gap: 6px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        font-style: initial;
+
+
+
+
+    }
+    
+
+    .html {
+        grid-area: html;
+        background-color: papayawhip;
+        font-size: 3.4em;
+        font-style: oblique;
+        color: darkred;
+        background-image: url(https://i.pinimg.com/1200x/bb/93/64/bb936496b61cd71cea58344204b9e743.jpg);
+    }
+    .sk {
+        grid-area: sk;
+        background-color:rgb(243, 199, 227);
+        font-size: 8em;
+        color: rgb(218, 87, 170);
+        margin-bottom: 2px;
+    }
+    
+    
+    .css {
+        grid-area: css;
+        background-color:darkgray;
+        margin-bottom: 2px;
+    }
+    .js1 {
+        grid-area: js1;
+        background-color: rgb(243, 199, 227);
+        color: aliceblue;
+        height: 400px;
+        width: 400px;
+        background-image: url("523B5E1F-FA46-4360-B938-36129C988A86_1_201_a.jpeg");
+    }
+
+
+    .js2 {
+        grid-area: js2;
+        background-color: rgb(243, 199, 227);
+        color: aliceblue; 
+        background-image: url("E3A85C43-B19A-4405-971B-4FD6E5078D61_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .js3 {
+        grid-area: js3;
+        background-color:rgb(243, 199, 227);
+        color: aliceblue;
+        background-image: url("AA189433-27BA-4C42-89E6-9AD06E8B2D62_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+        
+    }
+    .js4 {
+        grid-area: js4;
+        background-color: rgb(243, 199, 227);
+        color: aliceblue;
+        background-image: url("0E5E5613-F440-4297-90A3-CD42E6720F9B_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+        
+    }
+
+
+    .em1 {
+        grid-area: em1;
+        background-color:rgb(243, 199, 227);
+        color: aliceblue;
+        background-image: url("40A74E76-B7F0-4960-90EF-362A81954EB5_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+    }
+
+    .em2 {
+        grid-area: em2;
+        background-color:aqua;
+        color: aliceblue;
+        background-image: url("892970FE-A8F9-470D-BE08-7463CCFF821A_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+    }
+
+    .em3 {
+        grid-area: em3;
+        background-color:aqua;
+        color: aliceblue;
+        background-image: url("C97B66FB-4C43-40A8-86E1-68673096E9DF_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+    }
+    .em4{
+        grid-area: em4;
+        background-color:aqua;
+        color: aliceblue;
+        background-image: url("9BE550C3-EAC5-4AF7-86EF-1D0C6A525B2B_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+    }
+
+    .mm1 {
+        grid-area: mm1;
+        background-color: rgb(243, 199, 227);
+        color: aliceblue; 
+        background-image: url("4B08BC27-9A32-4F7F-BBBD-56F451E978F2_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+        row-gap: 8px;
+    }
+    .mm2 {
+        grid-area: mm2;
+        background-color: rgb(243, 199, 227);
+        color: aliceblue; 
+        background-image: url("19D11CA4-BB3D-4B51-B784-BBF99DE74DAB_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+        row-gap: 8px;
+    }
+    .mm3 {
+        grid-area: mm3;
+        background-color: rgb(243, 199, 227);
+        color: aliceblue; 
+        background-image: url("252E14BF-8284-4E12-88E9-5C7D653F4274_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+        row-gap: 8px;
+    }
+    .mm4 {
+        grid-area: mm4;
+        background-color: rgb(243, 199, 227);
+        color: aliceblue; 
+        background-image: url("0966B0D8-894F-4E27-897A-6F02429F272D_1_201_a.jpeg");
+        height: 400px;
+        width: 400px;
+        row-gap: 8px;
+    }
+    
+    .rr {
+        grid-area: rr;
+        margin: auto;
+        height: 1050px;
+        width: 680px;
+        background-image: url("1866717A-1289-4A8D-AFBB-D5D5286D86F5_1_201_a.jpeg");
+        background-color:rgb(223, 175, 200)
+    }   
+    
+    
+
+    .css2 {
+        grid-area: css2;
+        background-color:rgb(223, 187, 206);
+        text-align: center;
+        font-size: 20px;
+        
+        
+        
+    }
+</style>
+
+<body>
+    
+
+
+
+    <div class="container">
+        <div class="html">em nail</div>
+        <div class="sk">Good nails<br>Good mood<br>Good day</div>
+        <div class="css"> ᰔ　　OUR COLLECTION　　ᰔ　　OUR COLLECTION　　ᰔ　　OUR COLLECTION　　ᰔ　　OUR COLLECTION　　ᰔ　　OUR
+            COLLECTION　　ᰔ</div>
+
+        <div class="rr"></div>
+        <div class="js1"></div>
+        <div class="js2"></div>
+        <div class="js3"></div>
+        <div class="js4"></div>
+        <div class="em1"></div>
+        <div class="em2"></div>
+        <div class="em3"></div>
+        <div class="em4"></div>
+        <div class="mm1"></div>
+        <div class="mm2"></div>
+        <div class="mm3"></div>
+        <div class="mm4"></div>
+        
+        
+
+
+
+        <div class="css2" id="csss2">📍　Tokyo Edogawa Ward, Edogawa 6-33-113A
+            <a href="https://www.google.com/maps?q=日本、〒150-0011 東京都渋谷区東１丁目１−１１" target="_blank">View on Google Maps</a>
+            <br><br> 🕓　Monday~Saturday 11:00~20：00
+            <br><br>📞　090-1264-1739<br><br>To place a reservation, please send me a DM on my instagram.
+            <a href="https://www.instagram.com/emmmaa.19/" target="_blank">@emmmaa.19</a></div>
+        </div>
+</body>
+
+</html>
