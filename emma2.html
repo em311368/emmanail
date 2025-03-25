@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: antiquewhite;
+        }
+        
+        .quiz-container{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: aqua;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            text-align: center;
+        }
+        .question{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .options{
+            list-style: none;
+            padding: 0;
+        }
+        .options li{
+            margin: 10px 0;
+        }
+        button{
+            background-color: bisque;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hober{
+            background-color: blueviolet;
+        }
+        #result{
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>quiz</h1>
+        <div id="quiz">
+            <div id="quiz" class="quiz-container">
+            <ul class="options">
+                <li><button class="option" onclick="checkAnswer(0)">option 1</button></li>
+                <li><button class="option" onclick="checkAnswer(1)">option 2</button></li>
+                <li><button class="option" onclick="checkAnswer(2)">option 3</button></li>
+            
+            </ul>  
+            <button onclick="nextQuestion()">next question</button>  
+        </div>
+        <div id="result"></div>
+     </div>
+
+     
+<script>
+        let currentQuestionIndex = 0;
+        let score =0;
+
+        let questions = [
+            { question:"How many people in our class?",options:["27","33","31","30"],answers:2},
+            { question:"How many people in our class?",options:["27","33","31","30"],answers:2},
+            { question:"How many people in our class?",options:["27","33","31","30"],answers:2}
+            
+        ];
+
+        function loadQuestion() {
+            const question =questions[currentQuestionIndex];
+            document.getElementById('question').textContent=question.question;
+
+            const buttons = document.querySelectorAll('.option');
+            buttons.forEach((button, index) => {
+                button.textContent = question.options[index];
+            });
+            document.getElementByld('result').textContect="";
+
+        }
+        
+        function checkAnswer(selectedIndex) {
+            if (selectedIndex === questions[currentQuestionIndex].answer) {
+                score++;
+            }       
+         }
+
+         function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                loadQuestion();
+            } else{
+                document.getElementById("quiz").style.display="none";
+                document.getElementById("result").textContent="finish quiz! Your score is"
+            }
+         }
+         loadQuestion();
+         </script>
+    
+</body>
+</html>
